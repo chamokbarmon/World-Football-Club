@@ -9,12 +9,11 @@ const Teams = () => {
      .then(data=>setTeams(data))
 
     },[])
-    
-    const [card ,setCard] =useState([]);
-    const addToList =(team) =>{
-     const newCard = [...card,team]
-     setCard(newCard)
+    const handelAddToList =(cart)=>{
+        console.log(cart);
     }
+    
+
 
     return ( 
         <div className='FullContainer'>
@@ -23,7 +22,7 @@ const Teams = () => {
                     teams.map(team=><Card
                     key={team.id}
                     team={team}
-                    addToList={addToList}
+                    handelAddToList={handelAddToList}
                     ></Card>)
                 }
             </div>
