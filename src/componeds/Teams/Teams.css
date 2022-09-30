@@ -7,3 +7,44 @@
     grid-template-columns: repeat(3,1fr);
     gap: 25px;
 }
+.card {
+    display: flex;
+}
+.details{
+    display: flex;
+    margin-left: 10px;
+    background-color: aqua;
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.left{
+    margin-left: 15px;
+}
+.card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.experice{
+   width:100%;
+   background-color: blue;
+   padding: 10px;
+   color: white;
+   border-radius: 5px;
+
+}
+.circle{
+    border-radius: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-left: 8px;
+    color: black;
+    background-color: beige;
+
+}
+.circle-break{
+    background-color: blueviolet;
+    padding: 20px;
+}

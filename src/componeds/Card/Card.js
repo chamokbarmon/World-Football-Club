@@ -10,7 +10,7 @@ const Card = (props) => {
             <img src={img} alt="" />
              <p className='card-name'>Name :{name}</p>
              <p className='card-time'>Time :{time}</p>
-             <button onClick={()=>props.handelAddToList(props.team)} className='button-card'>{button}</button>
+             <button onClick={()=>props.handelAddToList(time)} className='button-card'>{button}</button>
             </div>
             
         </div>
