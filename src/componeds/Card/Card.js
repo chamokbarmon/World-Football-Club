@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 const Card = (props) => {
-    console.log(props.team);
+    
     const {img, name , time ,button}=props.team ;
 
     return (

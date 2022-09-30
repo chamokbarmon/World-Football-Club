@@ -3,14 +3,18 @@ import Card from '../Card/Card';
 import "./Teams.css";
 const Teams = () => {
     const [teams ,setTeams ] =useState([]);
+    const [cart, setCard]= ([]);
     useEffect (()=>{
      fetch(`data.json`)
      .then(res=>res.json())
      .then(data=>setTeams(data))
 
     },[])
-    const handelAddToList =(cart)=>{
-        console.log(cart);
+   
+    const handelAddToList =(team)=>{
+        console.log(team);
+        const newCard = [...cart,team];
+        setCard(newCard);
     }
     
 
@@ -28,6 +32,7 @@ const Teams = () => {
             </div>
             <div className="cardContainer">
                <h3>This is a card</h3>
+               <p>Selected Item {cart.length}</p>
             </div>
         </div>
     );
