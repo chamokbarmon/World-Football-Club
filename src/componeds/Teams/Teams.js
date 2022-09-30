@@ -18,6 +18,7 @@ const Teams = () => {
         
     }
     console.log(cart)
+    
 
 
     return ( 
@@ -57,7 +58,8 @@ const Teams = () => {
                      <div>
                         <h1>Add A Break</h1>
                         <div className='circle-break'>
-                            <button className='circle'>10</button>
+
+                            <button  className='circle'>10</button>
                             <button className='circle'>20</button>
                             <button className='circle'>19</button>
                             <button className='circle'>18</button>
